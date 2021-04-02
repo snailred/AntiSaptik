@@ -4,7 +4,7 @@ import json
 import datetime
 from encoderrr import Message, MyEncoder
 
-data = {"сперма": []}
+data = {"вау": []}
 
 bot = commands.Bot(command_prefix='.')
 
@@ -24,7 +24,7 @@ async def on_disconnect():
     with open('musor.json', 'w', encoding='utf-8') as file:
         json.dump(data, file, cls=MyEncoder, indent=4, ensure_ascii=False)
 
-@bot.command(name='алим')
+@bot.command(name='андрей')
 
 @commands.is_owner()
 async def bot_shutdown(ctx):
